@@ -1,10 +1,10 @@
 import React from "react";
 
-function Filter({ onCategoryChange }) {
+function Filter({search, select, onCategoryChange , onSearchChange}) {
   return (
     <div className="Filter">
-      <input type="text" name="search" placeholder="Search..." />
-      <select name="filter" onChange={onCategoryChange}>
+      <input type="text" name="search" value={search} onChange={onSearchChange}  placeholder={"Search..."} />
+      <select name="filter" value={select} onChange={onCategoryChange}>
         <option value="All">Filter by category</option>
         <option value="Produce">Produce</option>
         <option value="Dairy">Dairy</option>
