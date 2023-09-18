@@ -17,7 +17,7 @@ function ShoppingList({ items }) {
   }
 
   function addElement(element) {
-    const newItemList = [...items, element];
+    const newItemList = [...updatedItems, element];
     setUpdatedItems(newItemList);
   }
 
